@@ -120,5 +120,26 @@ body {
     font-size: 14px;
     color: #B2B2B2;
     line-height: 1.5;
-
+}
+.clients{
+    display: grid;
+    grid-template: repeat(2, 1rf) / repeat(4, 25%);
+    text-align: center;
+    grid-row-gap: 40px;
+}
+.team{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 33%);
+    grid-row-gap: 40px;
+}
+.team-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+..team-item img{
+    margin-right: 20px;
+}
+.team-item>div{
+    flex-basis: calc(100% - 100px);
 }
